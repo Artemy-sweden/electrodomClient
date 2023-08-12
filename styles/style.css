@@ -5,6 +5,9 @@
   /*? for scroll-snaping */
   scroll-behavior: smooth;
 }
+body {
+  font-family: "Inter", sans-serif;
+}
 a {
   text-decoration: none;
 }
