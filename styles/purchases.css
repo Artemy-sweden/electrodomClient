@@ -1,6 +1,16 @@
 .wrapper
 {
     max-width: 1440px;
-    margin: 0 auto;
-    color: red;
+    margin: 50px auto;
+    display: flexbox;
+    justify-content: center;
+}
+.container
+{
+    margin: 30px 0;
+    text-align: justify;
+}
+.container h4
+{
+    margin: 20px 0;
 }
