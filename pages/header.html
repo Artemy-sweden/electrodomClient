@@ -16,9 +16,17 @@
   <body>
     <header>
       <div class="header__inner">
-        <a href="#" class="logo"
-          ><img src="../assets/img/logo.png" alt="logo"
-        /></a>
+        <div class="burger" onclick="onClickBurger()"></div>
+        <a href="#" class="logo">
+          <div class="logo__img">
+            <img src="../assets/img/logo.png" alt="logo" />
+          </div>
+          <div class="logo__text">
+            <b>ElectroDom</b>
+            <p>купи наконец люстру</p>
+          </div></a
+        >
+
         <nav>
           <ul>
             <li><a href="#">Каталог</a></li>
@@ -39,5 +47,13 @@
       </div>
     </header>
     <section style="height: 400vh">ahahah</section>
+    <script>
+      function onClickBurger() {
+        if (window.innerWidth <= 551) {
+          var header = document.querySelector("header");
+          header.classList.toggle("active-menu");
+        }
+      }
+    </script>
   </body>
 </html>
