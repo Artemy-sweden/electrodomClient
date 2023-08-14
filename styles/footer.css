@@ -1,0 +1,17 @@
+footer {
+  width: 100%;
+  background: #282828;
+}
+.footer__inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 120px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+}
+.footer__section h4 {
+  text-transform: uppercase;
+  font-size: 28px;
+  color: #ffe600;
+}
