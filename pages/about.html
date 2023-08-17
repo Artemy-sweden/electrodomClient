@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>О нас</title>
     <link rel="stylesheet" href="../styles/style.css"/>
-    <link rel="stylesheet" href="../styles/AboutUs.css"/>
+    <link rel="stylesheet" href="../styles/about.css"/>
+    <link rel="stylesheet" href="../scripts/about.js">
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link
@@ -15,9 +16,9 @@
     />
 </head>
 <body>
-    <div class="about_us__wrapper">
+    <div class="about_wrapper">
         <h2>О нас</h2>
-        <div class="about_us__container">
+        <div class="about_container">
             <h4>О магазине</h4>
             <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam laborum,
@@ -36,32 +37,40 @@
                 iusto. Pariatur libero commodi consequuntur!
             </p>
         </div>   
-        <div class="about_us__container">
+        <div class="about_container">
             <h4 >Частые вопросы</h4>
             <div class="answer-container"> 
-    
-                <input type="radio" name="answer1" id="answer1" />
-                <label for="answer1">Как купить люстру?</label>
-                <div class="answer-body">
-                    <p>Бери любую, не ошибёшься, ты же еблан по жизни, ни одна люстра не сделает 
-                    твою комнату или жизнь светлой, ведь ты - мрак по жизни.
-                    </p>
+                <button class="accordion"><span>Какую люстру мне купить?</span></button>
+                <div class="panel">
+                    <p>Lorem ipsum...</p>
                 </div>
-                
-                <input type="radio" name="answer2" id="answer2" />
-                <label for="answer2">Как купить потолок</label>
-                <div class="answer-body">
-                    <p>Бери любой, иначе дом без крыши будет.</p>
+                <button class="accordion"><span>Какую люстру мне купить?</span></button>
+                <div class="panel">
+                    <p>Lorem ipsum...</p>
                 </div>
-                
-                <input type="radio" name="answer3" id="answer3" />
-                <label for="answer3">Как купить тумбочку?</label>
-                <div class="answer-body">
-                    <p>Бери любую, чтобы было куда трусы и носки кидать</p>
-                </div> 
+                <button class="accordion"><span>Какую люстру мне купить?</span></button>
+                <div class="panel">
+                    <p>Lorem ipsum...</p>
+                </div>
+                <script>
+                    var acc = document.getElementsByClassName("accordion");
+                    var i;
+                    
+                    for (i = 0; i < acc.length; i++) {
+                        acc[i].addEventListener("click", function() {
+                            this.classList.toggle("active");
+                            var panel = this.nextElementSibling;
+                            if (panel.style.display === "block") {
+                                panel.style.display = "none";
+                            } else {
+                                panel.style.display = "block";
+                            }
+                        });
+                    }
+                    </script>
             </div>            
         </div>
-        <div class="about_us__container">
+        <div class="about_container">
             <h4>Правила продажи</h4>
             <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam laborum,
