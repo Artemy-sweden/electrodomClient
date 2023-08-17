@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/home.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,7 +18,22 @@
   </head>
   <body>
     <div class="home__wrapper">
-      <div class="slider">...</div>
+      <div class="slider">
+        <div class="slider__inner">
+          <div class="slider__block">1</div>
+          <div class="slider__block">2</div>
+          <div class="slider__block">3</div>
+          <div class="slider__block">4</div>
+          <div class="slider__block">5</div>
+        </div>
+        <div class="slider__progress">
+          <span id="slider-sec-1"></span>
+          <span id="slider-sec-2"></span>
+          <span id="slider-sec-3"></span>
+          <span id="slider-sec-4"></span>
+          <span id="slider-sec-5"></span>
+        </div>
+      </div>
       Search
       <div class="home__section">
         <h4>Новинки</h4>
@@ -27,5 +43,26 @@
       </div>
       showMoreBtn
     </div>
+    <script>
+      let slider = document.querySelector(".slider__inner");
+      let state = 1;
+      let sliderLenght = 5;
+      let turn = 1;
+
+      function changeSlider() {
+        if (state == sliderLenght) {
+          turn = -1;
+        }
+        if (state == 1) {
+          turn = 1;
+        }
+        slider.style.marginLeft = state * -100 + "%";
+        document.getElementById("slider-sec-" + state).style.background =
+          "white";
+        state += turn;
+        document.getElementById("slider-sec-" + state).style.background = "red";
+      }
+      setInterval(changeSlider, 2000);
+    </script>
   </body>
 </html>
