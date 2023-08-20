@@ -1,35 +1,33 @@
-.about_wrapper
-{  
+.about__wrapper {
   max-width: 1440px;
   padding: 0 120px;
   margin: 50px auto;
   font-family: "Inter", sans-serif;
 }
-.about_wrapper h2
-{
+.about__wrapper h2 {
   font-size: 48px;
   letter-spacing: 0.1em;
 }
-.about_container 
-{
+.about__container {
   margin: 30px 0;
   font-size: 16px;
 }
-.about_container h4 
-{
+.about__container h4 {
   margin: 20px 0;
   letter-spacing: 0.05em;
   font-size: 36px;
 }
-.about_container p 
-{
+.about__container p {
   padding: 10px 0;
   text-align: justify;
 }
-.answer-container{
+.answer-container {
   max-width: 720px;
 }
-.accordion {
+.accordeon {
+  width: 100%;
+}
+.accordeon__button {
   font-size: 16px;
   background-color: white;
   cursor: pointer;
@@ -41,66 +39,65 @@
   outline: none;
   transition: 0.4s;
 }
-.active, .accordion:hover {
+.accordeon__button.answer-active,
+.accordeon__button:hover {
   background-color: #ccc;
 }
-.panel {
+.accordeon__panel {
+  width: 100%;
+
   padding: 0 18px;
   background-color: white;
   display: none;
   overflow: hidden;
   border-bottom: 1px solid #777;
 }
-.accordion:after {
-  content: '\02795'; 
+.accordeon__button::after {
+  content: "\02795";
   float: right;
   margin-left: 5px;
 }
-.active:after {
-  content: "\2796"; 
+.answer-active::after {
+  content: "\2796";
 }
 @media screen and (max-width: 900px) {
-  .about_wrapper {
+  .about__wrapper {
     padding: 0 60px;
   }
-  .about_wrapper h2 {
+  .about__wrapper h2 {
     font-size: 42px;
   }
-  .about_wrapper h4 {
+  .about__wrapper h4 {
     font-size: 30px;
   }
-  .accordion
-  {
+  .accordeon__button {
     padding: 8px;
   }
-  .accordion, .panel
-  {
+  .accordeon {
     max-width: 500px;
   }
 }
 @media screen and (max-width: 551px) {
-  .about_wrapper {
+  .about__wrapper {
     padding: 0 30px;
   }
-  .about_wrapper h2 {
+  .about__wrapper h2 {
     font-size: 36px;
   }
-  .about_wrapper h4 {
+  .about__wrapper h4 {
     margin: 10px 0;
     font-size: 24px;
   }
-  .accordion
-  {
-    padding: 5px;
-  }
-  .accordion, .panel
-  {
+  .accordeon {
     max-width: 320px;
   }
-  .panel
-  {  
+  .accordeon__button {
+    padding: 5px;
+  }
+  .accordeon__panel {
     padding: 0 5px;
   }
+  .accordeon__panel p {
+    font-size: 13px;
+  }
 }
-
-  
