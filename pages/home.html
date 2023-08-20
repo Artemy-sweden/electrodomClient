@@ -24,43 +24,45 @@
           <div class="slider__block">2</div>
           <div class="slider__block">3</div>
           <div class="slider__block">4</div>
-          <div class="slider__block">5</div>
         </div>
-        <div class="slider__progress">
-          <span id="slider-sec-1"></span>
-          <span id="slider-sec-2"></span>
-          <span id="slider-sec-3"></span>
-          <span id="slider-sec-4"></span>
-          <span id="slider-sec-5"></span>
-        </div>
+        <ul class="slider__progress">
+          <li
+            id="slider-stage-0"
+            class="active-stage"
+            onclick="changeSlider(0)"
+          ></li>
+          <li id="slider-stage-1" onclick="changeSlider(1)"></li>
+          <li id="slider-stage-2" onclick="changeSlider(2)"></li>
+          <li id="slider-stage-3" onclick="changeSlider(3)"></li>
+        </ul>
       </div>
-      Search
+      <div class="search-box">
+        <input type="text" placeholder="давай ищи..." />
+      </div>
       <div class="home__section">
         <h4>Новинки</h4>
-        <ul>
-          <li>card</li>
-        </ul>
+        <div class="items">cards...</div>
       </div>
       showMoreBtn
     </div>
     <script>
       let slider = document.querySelector(".slider__inner");
-      let state = 1;
-      let sliderLenght = 5;
-      let turn = 1;
+      let stage = 0;
+      let turnValue = 1;
+      let limit = 2;
+      function changeSlider(pos = -1) {
+        document
+          .getElementById("slider-stage-" + stage)
+          .classList.remove("active-stage");
 
-      function changeSlider() {
-        if (state == sliderLenght) {
-          turn = -1;
-        }
-        if (state == 1) {
-          turn = 1;
-        }
-        slider.style.marginLeft = state * -100 + "%";
-        document.getElementById("slider-sec-" + state).style.background =
-          "white";
-        state += turn;
-        document.getElementById("slider-sec-" + state).style.background = "red";
+        if (stage > limit) turnValue = -1;
+        if (stage == 0) turnValue = 1;
+        stage += turnValue;
+        if (pos != -1) stage = pos;
+        slider.style.marginLeft = -100 * stage + "%";
+        document
+          .getElementById("slider-stage-" + stage)
+          .classList.add("active-stage");
       }
       setInterval(changeSlider, 2000);
     </script>
