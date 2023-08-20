@@ -8,10 +8,12 @@
   align-items: center;
 }
 .slider {
-  width: 1080px;
+  max-width: 1080px;
+  width: 100%;
   position: relative;
   overflow: hidden;
   padding: 0 30px;
+  margin: 0 auto;
 }
 .slider__inner {
   transition: 0.5s;
@@ -88,4 +90,31 @@
   font-size: 48px;
   font-weight: 700;
   color: #000;
+}
+@media screen and (max-width: 900px) {
+  .home__wrapper {
+    padding: 0 60px;
+  }
+  .home__section h4 {
+    font-size: 36px;
+  }
+  .search-box input {
+    max-width: 75%;
+    font-size: 18px;
+  }
+  .slider__progress li {
+    width: 10px;
+    height: 10px;
+  }
+}
+@media screen and (max-width: 551px) {
+  .home__wrapper {
+    padding: 0 30px;
+  }
+  .home__section h4 {
+    font-size: 24px;
+  }
+  .search-box input {
+    font-size: 14px;
+  }
 }
