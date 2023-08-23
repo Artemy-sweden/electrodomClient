@@ -1,0 +1,18 @@
+.cart
+{
+    max-width: 80%;
+    margin: 50px auto;
+}
+.aaa
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.tovar
+{
+    height: 250px;
+    background-color: aqua;
+    width:25vh;
+    margin: 10px 0;
+}
