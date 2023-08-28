@@ -1,54 +1,59 @@
 .cart
 {
-    max-width: 80%;
-    margin: 50px auto;
-    font-family: "Inter", sans-serif;
+  max-width: 80%;
+  margin: 50px auto;
+  font-family: "Inter", sans-serif;
 }
 .cart h2 
 {
-    font-size: 48px;
-    letter-spacing: 0.1em;
-    margin-bottom: 15px;
+  font-size: 48px;
+  letter-spacing: 0.1em;
+  margin-bottom: 15px;
 }
 .cart_container
 {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(4, auto);
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
 }
 .tovar
 {
-    background-color: aqua;
-    width: 80%;
-    aspect-ratio: 3/4;
-    margin: 20px 0;
+  background-color: aqua;
+  width: 80%;
+  aspect-ratio: 3/4;
+  margin: 20px 0;
 }
-.cart label, .cart select
+.cart label, .cart #sorting
 {
-    font-size: 18px;
-    letter-spacing: 0.025em;
+  font-size: 18px;
+  letter-spacing: 0.025em;
 }
-.cart select, .set_an_order button
+.cart #sorting, .set_an_order button
 {
-    background-color: #181818;
-    color: white;
-    border-radius: 8px;
+  background-color: #d9d9d9;
+  color: #181818;
+  border-radius: 8px;
+}
+.cart label
+{
+  display: inline-block;
+  margin-right: 5px;
 }
 .set_an_order
 {
-    margin-top:20px;
-    display: flex;
-    justify-content: center;
+  margin-top:20px;
+  display: flex;
+  justify-content: center;
 }
 .set_an_order button
 {
-    padding: 10px 15px;
-    font-size: 14px;
-    justify-content: center;
+  padding: 10px 15px;
+  font-size: 14px;
+  justify-content: center;
 }
 .set_an_order button:hover{
-    background-color: black;
-    cursor: pointer;
+  background-color: black;
+  cursor: pointer;
 }
   @media screen and (max-width: 900px) {
     .cart {
@@ -80,7 +85,7 @@
     {
       font-size: 36px;
     }
-    .cart label, .cart select
+    .cart label, .cart #sorting
     {
       font-size: 13px;
       letter-spacing: 0.005em;
