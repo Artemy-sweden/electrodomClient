@@ -10,7 +10,7 @@
     letter-spacing: 0.1em;
     margin-bottom: 15px;
 }
-.aaa
+.cart_container
 {
     position: relative;
     display: grid;
@@ -18,9 +18,9 @@
 }
 .tovar
 {
-    height: 225px;
     background-color: aqua;
-    width: 175px;
+    width: 80%;
+    aspect-ratio: 3/4;
     margin: 20px 0;
 }
 .cart label, .cart select
@@ -28,49 +28,71 @@
     font-size: 18px;
     letter-spacing: 0.025em;
 }
-.cart select, .oo button
+.cart select, .set_an_order button
 {
     background-color: #181818;
     color: white;
-    border-radius: 6px;
+    border-radius: 8px;
 }
-.oo
+.set_an_order
 {
     margin-top:20px;
     display: flex;
     justify-content: center;
 }
-.oo button
+.set_an_order button
 {
     padding: 10px 15px;
     font-size: 14px;
     justify-content: center;
 }
-.oo button:hover{
+.set_an_order button:hover{
     background-color: black;
     cursor: pointer;
 }
   @media screen and (max-width: 900px) {
-    .purchases__wrapper {
-      padding: 0 60px;
+    .cart {
+      margin: 40px auto;
     }
-    .purchases__wrapper h2 {
+    .cart h2 
+    {
       font-size: 42px;
     }
-    .purchases__container h4 {
-      font-size: 30px;
+    .cart label, .cart select
+    {
+      font-size: 15px;
+      letter-spacing: 0.020em;
     }
+    .cart_container
+    {  
+      grid-template-columns: repeat(3, auto);
+    }
+    .set_an_order button
+    {
+      padding: 8px 10px;
+    }   
   }
   @media screen and (max-width: 551px) {
-    .purchases__wrapper {
-      padding: 0 30px;
+    .cart {
+      margin: 30px auto;
     }
-    .purchases__wrapper h2 {
+    .cart h2 
+    {
       font-size: 36px;
     }
-    .purchases__container h4 {
-      margin: 10px 0;
-      font-size: 24px;
+    .cart label, .cart select
+    {
+      font-size: 13px;
+      letter-spacing: 0.005em;
     }
+    .cart_container
+    {  
+      grid-template-columns: repeat(2, auto);
+    }
+    .set_an_order button
+    {
+      padding: 8px 10px;
+      font-size: 12px;
+    }  
   }
   
