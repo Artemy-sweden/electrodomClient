@@ -5,6 +5,10 @@
   /*? for scroll-snaping */
   scroll-behavior: smooth;
 }
+body {
+  font-family: "Inter", sans-serif;
+  background: #eeeeee;
+}
 a {
   text-decoration: none;
 }
@@ -12,3 +16,8 @@ li {
   list-style: none;
 }
 /*! varibles - fonts/colors/viewportIndexes */
+:root {
+  --yellow-col: #ffe600;
+  --dark-col: #282828;
+  --light-col: #eeeeee;
+}

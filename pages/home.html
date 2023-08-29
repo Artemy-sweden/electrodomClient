@@ -3,11 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <!--link fonts !!!!!!!!!!-->
     <!--link  favicon!!!!-->
     <!--link metatags CEO!!!!-->
     <title>ElectroDom</title>
   </head>
-  <body></body>
+  <body>
+    <div class="slider">
+      <div class="slider__inner">
+        <div class="slider__block">1</div>
+        <div class="slider__block">2</div>
+        <div class="slider__block">3</div>
+        <div class="slider__block">4</div>
+      </div>
+      <ul class="slider__progress">
+        <li
+          id="slider-stage-0"
+          class="active-stage"
+          onclick="changeSlider(0)"
+        ></li>
+        <li id="slider-stage-1" onclick="changeSlider(1)"></li>
+        <li id="slider-stage-2" onclick="changeSlider(2)"></li>
+        <li id="slider-stage-3" onclick="changeSlider(3)"></li>
+      </ul>
+    </div>
+    <div class="home__wrapper">
+      <div class="search-box">
+        <input type="text" placeholder="давай ищи..." />
+      </div>
+      <div class="home__section">
+        <h4>Новинки</h4>
+        <div class="items">cards...</div>
+      </div>
+      showMoreBtn
+    </div>
+    <script>
+      let slider = document.querySelector(".slider__inner");
+      let stage = 0;
+      let turnValue = 1;
+      let limit = 2;
+      function changeSlider(pos = -1) {
+        document
+          .getElementById("slider-stage-" + stage)
+          .classList.remove("active-stage");
+
+        if (stage > limit) turnValue = -1;
+        if (stage == 0) turnValue = 1;
+        stage += turnValue;
+        if (pos != -1) stage = pos;
+        slider.style.marginLeft = -100 * stage + "%";
+        document
+          .getElementById("slider-stage-" + stage)
+          .classList.add("active-stage");
+      }
+      setInterval(changeSlider, 2000);
+    </script>
+  </body>
 </html>
