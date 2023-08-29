@@ -13,14 +13,13 @@
         <h2>Корзина</h2>
         <form target="_top">
             <label for="sorting">Отсортировать по</label>
-            <input type = "text" list = "sorting" name="sorting"> 
-            <datalist id = "sorting">
-                <option value = "названию">
-                <option value = "возрастанию цены">
-                <option value = "убыванию цены">
-                <option value = "положительным отзывам">
-                <option value = "дате выпуска">
-            </datalist>
+            <select id = "sorting" name="sorting">
+                <option value = "названию">названию</option>
+                <option value = "возрастанию цены">возрастанию цены</option>
+                <option value = "убыванию цены">убыванию цены</option>
+                <option value = "положительным отзывам">положительным отзывам</option>
+                <option value = "дате выпуска">дате выпуска</option>
+            </select>
         </form>
         <div class="cart_container">
             <div class="tovar"></div>
