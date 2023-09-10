@@ -22,8 +22,8 @@
 }
 .personal__photo
 {
-    width: 250px;
-    height: 250px;
+    width: 30vh;
+    aspect-ratio: 1;
     background-color: aqua;
     border-radius: 50%;
 }
@@ -43,19 +43,73 @@ p {
     color: red;
     text-decoration: underline;
 }
-.history__container {
-    max-width: 100%;
+.history__container
+{
     width: 100%;
-    justify-content: space-between;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    
-    background-color: aquamarine;
-  }
-  .history__item {
-    width: 20%;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
+    margin: 10px 0;
     position: relative;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 45%);
+}
+.history__item
+{
+    margin: 20px 0;
+    width: 100%;
+    aspect-ratio: 1;
+    background-color: blueviolet;
+}
+button
+{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 20px;
+    border-radius: 7px;
+    color: #f1f1f1;
+    background-color: #181818;
+    padding: 10px 15px;
+}
+button:hover
+{
     background-color: black;
-  }
+    cursor: pointer;
+}
+.cards__in__account
+{
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(4, 20%);
+}
+.card__in__account
+{
+    margin: 10px 0;
+    width: 100%;
+    aspect-ratio: 1;
+    background-color: blueviolet;
+}
+label
+{
+    display: block;
+}
+input, textarea
+{
+    background-color: #f1f1f1;
+    border: none;
+    margin: 5px 0;
+    padding: 8px 10px;
+    width: 30%;
+}
+textarea
+{
+    display: block;
+    resize: none;
+    width: 60%;
+}
+.send
+{
+    justify-content:flex-start;
+}
