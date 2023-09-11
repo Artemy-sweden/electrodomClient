@@ -1,5 +1,5 @@
 .account__wrapper {
-    max-width: 80%;
+    max-width: 75%;
     margin: 50px auto;
     font-family: "Inter", sans-serif;
 }
@@ -62,8 +62,7 @@ p {
 button
 {
     display: flex;
-    justify-content: center;
-    margin: 0 auto;
+    margin: 20px 0;
     font-size: 20px;
     border-radius: 7px;
     color: #f1f1f1;
@@ -107,9 +106,54 @@ textarea
 {
     display: block;
     resize: none;
-    width: 60%;
+    width: 70%;
 }
-.send
+.not__send
 {
-    justify-content:flex-start;
+    display: flex;
+    margin: 20px auto;
+}
+#zvezda::after, .determine__star::before
+{
+    content: '*';
+    font-size: 18px;
+    color:red;
+}
+@media screen and (max-width: 900px){
+    .account__wrapper h2 
+    {
+        font-size: 42px;
+    }
+    .account__wrapper h4
+    {
+        margin: 14px 0;
+        font-size: 24px;
+    }
+    .personal__photo
+    {
+        width: 25vh;
+    }
+    .personal__data_description
+    {
+        margin-left: 60px;
+    }
+    p 
+    {
+        padding: 6px 0;
+        font-size: 14px;
+    }
+    button
+    {
+        margin: 14px 0;
+        font-size: 16px;
+        padding: 5px 8px;
+    }
+    textarea
+    {
+        width: 80%;
+    }
+    .cards__in__account
+    {
+        grid-template-columns: repeat(3, 27%);
+    }
 }
