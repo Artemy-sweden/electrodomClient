@@ -1,0 +1,122 @@
+.authentification__wrapper {
+    max-width: 75%;
+    margin: 50px auto;
+    font-family: "Inter", sans-serif;
+}
+.authentification__wrapper h2 
+{
+    font-size: 48px;
+    letter-spacing: 0.1em;
+}
+.authentification__wrapper h4
+{
+    margin: 20px 0;
+    padding-top: 20px;
+    letter-spacing: 0.05em;
+    font-size: 36px;
+}
+.authentification__container
+{
+    text-align: center;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+}
+input
+{
+    height: 50px;
+    display: table;
+    justify-content: center;
+    border: none;
+    border-radius: 7px;
+    margin: 15px 30px;
+    padding: 8px 10px;
+    width: 70%;
+    font-size: 18px;
+    background-color: #e6e6e6;
+    color: #5c5c5c;
+}
+button
+{
+    margin: 20px 0;
+    font-size: 20px;
+    border-radius: 7px;
+    color: #ffffff;
+    background-color: #282828;
+    padding: 10px 15px;
+}
+button:hover
+{
+    background-color: #181818;
+    cursor: pointer;
+}
+.parametrs
+{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+.parametrs a
+{
+    margin: 40px;
+    color: #181818;
+}
+.parametrs a:hover
+{
+    text-decoration: underline;
+}
+.back
+{
+    display: flex;
+    margin: 20px auto;
+}
+@media screen and (max-width: 900px){
+    .authentification__wrapper h2 
+    {
+        font-size: 42px;
+        letter-spacing: 0.05em;
+    }
+    .authentification__wrapper h4
+    {
+        letter-spacing: 0.02em;
+        font-size: 30px;
+    }
+    input
+    {
+        height: 40px;
+        font-size: 16px;
+    }
+    button
+    {
+        padding: 7px 10px;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 900px){
+    .authentification__wrapper h2 
+    {
+        font-size: 30px;
+        letter-spacing: 0.04em;
+    }
+    .authentification__wrapper h4
+    {
+        letter-spacing: 0.015em;
+        font-size: 24px;
+    }
+    input
+    {
+        height: 30px;
+        font-size: 14px;
+        border-radius: 15px;
+    }
+    button
+    {
+        padding: 5px 8px;
+        font-size: 14px;
+        border-radius: 15px;
+    }
+    .parametrs a
+    {
+        font-size: 11px;
+        margin: 20px;
+    }
+}
