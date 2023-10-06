@@ -1,5 +1,5 @@
 .authentification__wrapper {
-    max-width: 75%;
+    max-width: 65%;
     margin: 50px auto;
     font-family: "Inter", sans-serif;
 }
@@ -58,6 +58,7 @@ button:hover
 .parametrs a
 {
     margin: 40px;
+    font-size: 20px;
     color: #181818;
 }
 .parametrs a:hover
@@ -91,7 +92,7 @@ button:hover
         font-size: 16px;
     }
 }
-@media screen and (max-width: 900px){
+@media screen and (max-width: 551px){
     .authentification__wrapper h2 
     {
         font-size: 30px;
@@ -107,6 +108,7 @@ button:hover
         height: 30px;
         font-size: 14px;
         border-radius: 15px;
+        margin: 10px;
     }
     button
     {
@@ -117,6 +119,6 @@ button:hover
     .parametrs a
     {
         font-size: 11px;
-        margin: 20px;
+        margin: 10px;
     }
 }
