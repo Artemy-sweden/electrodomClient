@@ -1,25 +1,18 @@
-.authentification__wrapper {
-    max-width: 75%;
+.authentification__container
+{
+    max-width: 70%;
     margin: 50px auto;
     font-family: "Inter", sans-serif;
+    text-align: center;
+    background-color: #d9d9d9;
+    border-radius: 5px;
 }
-.authentification__wrapper h2 
-{
-    font-size: 48px;
-    letter-spacing: 0.1em;
-}
-.authentification__wrapper h4
+.authentification__container h4
 {
     margin: 20px 0;
     padding-top: 20px;
     letter-spacing: 0.05em;
     font-size: 36px;
-}
-.authentification__container
-{
-    text-align: center;
-    background-color: #d9d9d9;
-    border-radius: 5px;
 }
 input
 {
@@ -53,7 +46,8 @@ button:hover
 .parametrs
 {
     display: flex;
-    justify-content: space-between;
+    margin: 0 100px;
+    justify-content: space-around;
     text-decoration: none;
 }
 .parametrs a
@@ -66,18 +60,8 @@ button:hover
 {
     text-decoration: underline;
 }
-.back
-{
-    display: flex;
-    margin: 20px auto;
-}
 @media screen and (max-width: 900px){
-    .authentification__wrapper h2 
-    {
-        font-size: 36px;
-        letter-spacing: 0.05em;
-    }
-    .authentification__wrapper h4
+    .authentification__container h4
     {
         letter-spacing: 0.02em;
         font-size: 30px;
@@ -92,27 +76,31 @@ button:hover
         padding: 7px 10px;
         font-size: 16px;
     }
+    .parametrs
+    {
+        margin: 0 40px;
+    }
+    .parametrs a
+    {
+        margin: 20px;
+        font-size: 14px;
+    }
 }
 @media screen and (max-width: 551px){
-    .authentification__wrapper h2 
-    {
-        font-size: 30px;
-        letter-spacing: 0.04em;
-    }
-    .authentification__wrapper h4
+    .authentification__container h4
     {
         letter-spacing: 0.015em;
-        font-size: 24px;
+        font-size: 20px;
     }
     input
     {
         height: 30px;
         font-size: 14px;
         border-radius: 15px;
-        margin: 10px;
     }
     button
     {
+        margin: 10px 0;
         padding: 5px 8px;
         font-size: 14px;
         border-radius: 15px;
