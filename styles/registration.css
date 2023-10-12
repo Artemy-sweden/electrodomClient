@@ -1,0 +1,81 @@
+.registration__container
+{
+    max-width: 70%;
+    margin: 50px auto;
+    font-family: "Inter", sans-serif;
+    text-align: center; 
+    background-color: #d9d9d9;
+    border-radius: 5px;
+}
+.registration__container h4
+{
+    margin: 20px 0;
+    padding-top: 20px;
+    letter-spacing: 0.05em;
+    font-size: 36px;
+}
+.input__data input
+{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 7px;
+    margin: 15px auto;
+    padding: 8px 10px;
+    width: 70%;
+    font-size: 18px;
+    background-color: #e6e6e6;
+    color: #5c5c5c;
+}
+.input__radio
+{
+    font-size: 16px;
+    text-align: left;
+    width: 70%;
+    margin: 0 auto;
+}
+input[type='radio'] {
+    accent-color: #232323;
+}
+.condition
+{
+    display: block;
+    margin: 10px 0
+}
+button
+{
+    text-align: center;
+    margin: 20px auto;
+    font-size: 20px;
+    border-radius: 7px;
+    color: #ffffff;
+    background-color: #282828;
+    padding: 10px 15px;
+}
+button:hover
+{
+    background-color: #181818;
+    cursor: pointer;
+}
+.already__have__account
+{
+    padding: 10px 100px;
+    justify-content: space-around;
+    text-decoration: none;
+}
+.already__have__account p
+{
+    padding: 20px 5px;
+}
+.already__have__account a
+{
+    font-size: 20px;
+    color: #181818;
+    line-height: 30px;
+}
+.already__have__account a:hover
+{
+    text-decoration: underline;
+}
