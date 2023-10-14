@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/registration.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="registration__container">
+      <h4>Регистрация</h4>
+      <form action="" method="post">
+        <div class = "input__data">
+            <input type="text" id="login" size="40" placeholder="Логин">
+            <input type="email" id="email" size="40" placeholder="E-mail">
+            <input type="password" id="password" size="40" placeholder="Пароль">
+            <input type="password" id="require__password" size="40" placeholder="Повторите пароль">
+        </div>
+        <div class="input__radio">
+            <p>Я согласен(-на)</p>
+            <div class="condition">
+                <input type="radio" id="one">
+                <label for="one">с пользовательским соглашением на получение e-mail пассылки</label>
+            </div>
+            <div class="condition">
+                <input type="radio" id="two">
+                <label for="two">на обработку персональных данных</label>
+            </div>
+        </div>
+        <button type="submit" value="Войти">Регистрация</button>
+        <div class="already__have__account">
+          <p>Уже есть аккаунт?</p>
+          <a href="#">Войти</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
