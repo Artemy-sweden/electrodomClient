@@ -46,7 +46,7 @@ input[type='radio'] {
 button
 {
     text-align: center;
-    margin: 20px auto;
+    margin: 15px auto;
     font-size: 20px;
     border-radius: 7px;
     color: #ffffff;
@@ -60,13 +60,13 @@ button:hover
 }
 .already__have__account
 {
-    padding: 10px 100px;
+    padding: 0px 100px 10px;
     justify-content: space-around;
     text-decoration: none;
 }
 .already__have__account p
 {
-    padding: 20px 5px;
+    padding: 10px 5px;
 }
 .already__have__account a
 {

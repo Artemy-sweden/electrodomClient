@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Авторизация</title>
+    <title>Регистрация</title>
     <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="../styles/registration.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,20 +27,21 @@
         <div class="input__radio">
             <p>Я согласен(-на)</p>
             <div class="condition">
-                <input type="radio" id="one">
+                <input type="radio" id="radio_one" class="radio">
                 <label for="one">с пользовательским соглашением на получение e-mail пассылки</label>
             </div>
             <div class="condition">
-                <input type="radio" id="two">
+                <input type="radio" id="radio_two" class="radio">
                 <label for="two">на обработку персональных данных</label>
             </div>
         </div>
         <button type="submit" value="Войти">Регистрация</button>
         <div class="already__have__account">
-          <p>Уже есть akkkaunt?</p>
+          <p>Уже есть аккаунт?</p>
           <a href="#">Войти</a>
         </div>
       </form>
     </div>
+    <script src="../scripts/registration.js"></script>
   </body>
 </html>
